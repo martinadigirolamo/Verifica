@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Biblioteca
 {
-    class Biblioteca
+    class Biblioteca:Libro
     {
         protected string _nome;
         protected string _indirizzo;
@@ -20,16 +20,22 @@ namespace Biblioteca
         public int OrarioChiusura { set; get; }
         public List<string> ElencoLibri { set; get; }
 
-
-        public Biblioteca(string nome, string indirizzo, int orarioApertura, int orarioChiusura, List<string> elencoLibri)
+        public Biblioteca(string autore, string titolo, int annoPubblicazione, string editore, int numeroPagine, string nome, string indirizzo, int orarioApertura, int orarioChiusura, List<string> elencoLibri) : base(autore, titolo, annoPubblicazione, editore, numeroPagine)
         {
             Nome = nome;
             Indirizzo = indirizzo;
             OrarioApertura = orarioApertura;
             OrarioChiusura = orarioChiusura;
-            ElencoLibri = elencoLibri;
+            
         }
 
+        public List<string> RiempiLista()
+        {
+
+            ElencoLibri.Add(Titolo);
+
+            return ElencoLibri;
+        }
 
     }
 }

@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="btn_aggiungiLibro" Content="Aggiungi libro" HorizontalAlignment="Left" Margin="93,300,0,0" VerticalAlignment="Top" Width="118" Height="55" FontSize="17"/>
+        <Button x:Name="btn_aggiungiLibro" Content="Aggiungi libro" HorizontalAlignment="Left" Margin="93,300,0,0" VerticalAlignment="Top" Width="118" Height="55" FontSize="17" Click="btn_aggiungiLibro_Click"/>
         <Label Content="Titolo:" HorizontalAlignment="Left" Margin="12,130,0,0" VerticalAlignment="Top" Height="29" Width="91" FontSize="15"/>
         <Label Content="Autore:" HorizontalAlignment="Left" Margin="13,91,0,0" VerticalAlignment="Top" Height="29" Width="74" FontSize="15" RenderTransformOrigin="0.516,-0.349"/>
         <Label Content="Anno pubblicazione:" HorizontalAlignment="Left" Margin="12,159,0,0" VerticalAlignment="Top" Height="29" Width="153" FontSize="15"/>
@@ -20,6 +20,7 @@
         <TextBox x:Name="txt_autore" HorizontalAlignment="Left" Height="29" Margin="165,91,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="137"/>
         <Label Content="Libri presenti:" HorizontalAlignment="Left" Margin="524,45,0,0" VerticalAlignment="Top" Width="119" FontSize="15"/>
         <ListBox x:Name="lst_libriPresenti" HorizontalAlignment="Left" Height="228" Margin="488,91,0,0" VerticalAlignment="Top" Width="201" FontSize="15"/>
+        <Button x:Name="btn_visualizzaLibri" Content="Visualizza libri presenti" HorizontalAlignment="Left" Margin="506,338,0,0" VerticalAlignment="Top" Width="165" Height="54" FontSize="15" Click="btn_visualizzaLibri_Click" />
 
     </Grid>
 </Window>

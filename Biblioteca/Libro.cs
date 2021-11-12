@@ -43,6 +43,7 @@ namespace Biblioteca
             AnnoPubblicazione = annoPubblicazione;
             Editore = editore;
             NumeroPagine = numeroPagine;
+            
         }
 
         public override string ToString()
